@@ -35,6 +35,6 @@ public class DemoApplicationTest {
     public void test01() throws Exception {
         this.mockMvc.perform(get("/api/message/get")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().contentType("application/json"))
-                .andExpect(content().string(containsString("Welcome to the machi.")));
+                .andExpect(content().string(containsString("Welcome to the machine.")));
     }
 }
